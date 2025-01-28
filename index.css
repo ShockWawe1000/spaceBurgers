@@ -1,0 +1,275 @@
+/*
+*{
+  border: 1px red solid;
+}
+*/
+header {
+  margin-top: 10px;
+  padding: 10px 5px;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  width: 430px;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 12px;
+  /* From https://css.glass */
+  background: rgba(121, 120, 120, 0.13);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.8px);
+  -webkit-backdrop-filter: blur(6.8px);
+  border: 1px solid rgba(255, 255, 255, 0.56);
+}
+
+.icon {
+  width: 30px;
+  transition: transform 0.1s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #111111;
+}
+
+.car {
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+  z-index: 20;
+  overflow: hidden;
+}
+
+.img-wrap {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.img-wrap img {
+  width: 600px;
+  padding: 100px;
+  transition: transform 0.1s;
+  transition-timing-function: ease-in;
+  object-fit: contain;
+}
+
+.img-wrap img:hover {
+  transform: scale(1.2);
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 200px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  color: #f0f0f0;
+  z-index: 2;
+}
+
+.btn:hover {
+  color: #747373;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.description {
+  color: #f0f0f0;
+  z-index: 199;
+  min-width: 300px;
+  max-width: 60%;
+}
+
+.description h1 {
+  font-size: 150px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.description p {
+  font-size: 30px;
+  padding: 20px 0px 0px 30px;
+  margin: 0;
+  max-width: 40%;
+}
+
+nav button {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 0;
+  font-size: 30px;
+  padding: 0px 15px;
+  transition: transform 0.1s ease;
+}
+
+nav button:hover {
+  background-color: #ffc21c;
+  color: rgb(0, 0, 0);
+  border: 0;
+  font-size: 30px;
+  border-radius: 18px;
+  transform: scale(1.1);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: radial-gradient(circle at top right, rgba(121, 68, 154, 0.13), transparent), radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent);
+}
+
+.canvas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  position: absolute;
+  bottom: 2vmin;
+  right: 2vmin;
+  color: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+}
+
+.iconAbout {
+  width: 400px;
+  transition: transform 0.1s;
+  transition-timing-function: ease-in;
+  object-fit: contain;
+}
+
+.iconAbout:hover {
+  transform: scale(1.2);
+}
+
+.aboutDesc {
+  color: white;
+  padding: 60px;
+  max-width: 40%;
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+}
+
+.aboutDesc h1 {
+  font-size: 120px;
+  padding: 0px;
+  margin: 0px;
+  padding-bottom: 20px;
+}
+
+.aboutDesc p {
+  font-size: 30px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  /* From https://css.glass */
+  background: rgba(121, 120, 120, 0.13);
+  margin: 15px;
+  margin-top: 20vh;
+  font-size: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.8px);
+  -webkit-backdrop-filter: blur(6.8px);
+  border: 1px solid rgba(255, 255, 255, 0.56);
+  height: 390px;
+  width: 670px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  border-radius: 12px;
+  /* From https://css.glass */
+  background: rgba(121, 120, 120, 0.13);
+  height: 40px;
+  width: 300px;
+  margin: 15px;
+  font-size: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.8px);
+  -webkit-backdrop-filter: blur(6.8px);
+  border: 1px solid rgba(255, 255, 255, 0.56);
+  color: white;
+}
+
+.textarea {
+  border-radius: 12px;
+  /* From https://css.glass */
+  background: rgba(121, 120, 120, 0.13);
+  height: 100px;
+  width: 300px;
+  margin: 15px;
+  font-size: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.8px);
+  -webkit-backdrop-filter: blur(6.8px);
+  border: 1px solid rgba(255, 255, 255, 0.56);
+  color: white;
+}
+
+.contact img {
+  height: 330px;
+  width: 250px;
+  margin: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.56);
+  border-radius: 14px;
+}
+
+/*# sourceMappingURL=index.css.map*/
